@@ -3,17 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Yoda Translator</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
+    <div class="header">
+      <a href="https://github.com/khanlifts/yoda-translator">
+        <img id="gitHub" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
+      </a>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Yoda Translator</span>
+          <span class="heading-primary--sub">Give it a try</span>
+        </h1>
 
-    <h3>Yoda Translator</h3>
-
-    <form id="messages">
-      <input name="message" type="text" placeholder="Message" autofocus autocomplete="off"/>
-      <button>Send Yoda Message</button>
-    </form>
-
+        <form id="messages">
+          <input name="message" type="text" placeholder="Message" autofocus autocomplete="off"/>
+          <button>Send Yoda Message</button>
+        </form>
+      </div>
+    </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/libs/jquery-3.3.1.min.js"></script>
     <script src="/js/index.js"></script>

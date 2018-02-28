@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Star_Jedi_Rounded', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to bottom, rgba(54, 81, 144, 0.2), rgba(0, 0, 0, 0.2)), url('/css/star-wars-background.png');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+#gitHub {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 2rem;
+  margin-bottom: 1rem;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  letter-spacing: .5rem;
+}
