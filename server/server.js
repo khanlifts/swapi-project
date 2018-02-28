@@ -21,20 +21,21 @@ io.on('connection', (socket) => {
   console.log('New user connected');
   socket.on('createMessage', (message, callback) => {
     console.log('createMessage: ', message);
-    socket.emit('newMessage', generateMessage(message.text))
-    callback();
+
+    yoda.convert(message.text,
+    (err, result) => {
+        if (!err) {
+            socket.emit('newMessage', generateMessage(result.toString()))
+            callback();
+            console.log(result.toString());
+        } else {
+            console.log('This is the error: ', err);
+        }
+    })
+
   });
 });
 
 server.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
-
-yoda.convert("I'm really happy for you, and I'm going to let you finish, but this is the best Node package of all time.",
-function(err, result) {
-    if (!err) {
-        console.log(result.toString());
-    } else {
-        console.log('This is the error: ', err);
-    }
-})
