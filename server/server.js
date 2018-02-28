@@ -5,6 +5,7 @@ const socketIO = require('socket.io');
 
 const publicPath = path.join(__dirname, '../public');
 const port = process.env.PORT || 3000;
+const {generateMessage} = require('./utils/message');
 
 var app = express();
 var server = http.createServer(app);
@@ -17,10 +18,7 @@ io.on('connection', (socket) => {
 
   socket.on('createMessage', (message, callback) => {
     console.log('createMessage: ', message);
-    socket.emit('newMessage', {
-      text: 'This is from the server',
-      createdAt: new Date().getTime()
-    })
+    socket.emit('newMessage', generateMessage(message.text))
     callback();
   });
 });
