@@ -1,51 +1,67 @@
+$color-gray-light: #365190;
+$color-black: black;
+$color-white: #fff;
+
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
   font-family: 'Star_Jedi_Rounded', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   padding: 3rem;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 #gitHub {
   position: absolute;
   top: 0;
   right: 0;
-  border: 0; }
+  border: 0;
+}
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to bottom, rgba(54, 81, 144, 0.2), rgba(0, 0, 0, 0.2)), url("/css/star-wars-background.png");
+  background-image: linear-gradient(to bottom, rgba($color-gray-light, 0.2), rgba($color-black, 0.2)), url('/css/star-wars-background.png');
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); }
-  .header__text-box {
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+
+  &__text-box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; }
+    text-align: center;
+  }
+}
 
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
-  margin-bottom: 3rem; }
-  .heading-primary--main {
+  margin-bottom: 3rem;
+
+  &--main {
     display: block;
     font-size: 3rem;
     font-weight: 600;
     letter-spacing: 2rem;
-    margin-bottom: 1rem; }
-  .heading-primary--sub {
+    margin-bottom: 1rem;
+  }
+
+  &--sub {
     display: block;
     font-size: 2rem;
-    letter-spacing: .5rem; }
+    letter-spacing: .5rem;
+  }
+}
