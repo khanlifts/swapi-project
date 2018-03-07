@@ -52,6 +52,11 @@ body {
 .yodaBtn:hover {
   font-size: 1.7rem; }
 
+li {
+  font-size: 2rem;
+  color: #fff;
+  list-style-type: none; }
+
 .yodaInput {
   width: 80%;
   height: 3em;
