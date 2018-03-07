@@ -12,12 +12,12 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Star_Jedi_Rounded', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   padding: 3rem; }
 
 .heading-primary {
+  font-family: 'Poller One', cursive;
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 3rem; }
@@ -40,7 +40,9 @@ body {
 
 .yodaBtn {
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: .1rem; }
 
 .yodaBtn:link,
 .yodaBtn:visited {
@@ -48,7 +50,7 @@ body {
   text-decoration: none; }
 
 .yodaBtn:hover {
-  color: #09883c; }
+  font-size: 1.7rem; }
 
 .yodaInput {
   width: 80%;
@@ -58,9 +60,9 @@ body {
   border: 0px; }
 
 .yodaBtn {
-  width: 100%;
+  width: 80%;
   padding: 15px 40px;
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
   border-radius: 100px;
   transition: all .2s;
   position: relative;
@@ -78,7 +80,8 @@ body {
 
 .yodaBtn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
 
 .yodaBtn:active {
   transform: translateY(-2px); }
