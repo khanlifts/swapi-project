@@ -32,6 +32,57 @@ body {
     font-size: 2rem;
     letter-spacing: .5rem; }
 
+.yodaInput {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #09883c;
+  text-align: center; }
+
+.yodaBtn {
+  color: #fff;
+  text-transform: uppercase; }
+
+.yodaBtn:link,
+.yodaBtn:visited {
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.yodaBtn:hover {
+  color: #09883c; }
+
+.yodaInput {
+  width: 80%;
+  height: 3em;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 0px; }
+
+.yodaBtn {
+  width: 100%;
+  padding: 15px 40px;
+  margin-top: 20px;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
+  background: rgba(41, 168, 88, 0.4);
+  border: 0px; }
+
+.yodaBtn:link,
+.yodaBtn:visited {
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5); }
+
+.yodaBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
+
+.yodaBtn:active {
+  transform: translateY(-2px); }
+
 #gitHub {
   position: absolute;
   top: 0;

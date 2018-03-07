@@ -25,4 +25,25 @@ body {
     letter-spacing: .5rem;
   }
 }
- 
+
+.yodaInput {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(9, 136, 60);
+  text-align: center;
+}
+
+.yodaBtn {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.yodaBtn:link,
+.yodaBtn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.yodaBtn:hover {
+  color: rgb(9, 136, 60);
+}
