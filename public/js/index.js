@@ -11,12 +11,15 @@ socket.on('newMessage', function(message) {
 jQuery('#messages').on('submit', function(e) {
   e.preventDefault();
 
-  var messageTextbox = jQuery('[name=message]');
+  var optionSelect = jQuery('[name=option]')
+  var messageTextbox = jQuery('[name=number]');
 
   socket.emit('createMessage', {
-    text: messageTextbox.val()
+    number: messageTextbox.val(),
+    option: optionSelect.val()
   }, function () {
     messageTextbox.val('');
+    optionSelect.val('');
   })
 
 });

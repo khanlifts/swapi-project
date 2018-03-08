@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Yoda Translator</title>
+    <title>SWAPI Project</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
   </head>
@@ -18,7 +18,15 @@
         </h1>
 
         <form id="messages">
-          <input class="yodaInput" name="message" type="text" placeholder="Do or don't..." autofocus autocomplete="off"/>
+          <select class="yodaInput" name="option">
+            <option value="people">People</option>
+            <option value="planets">Planets</option>
+            <option value="starships">Starships</option>
+            <option value="films">Films</option>
+            <option value="species">Species</option>
+            <option value="vehicles">Vehicles</option>
+          </select><br><br>
+          <input class="yodaInput" name="number" type="text" placeholder="1, 2, 3..." autofocus autocomplete="off"/>
           <button class="yodaBtn">Send Yoda Message</button>
         </form>
       </div>
