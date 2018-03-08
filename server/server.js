@@ -17,11 +17,11 @@ app.use(express.static(publicPath));
 io.on('connection', (socket) => {
   console.log('New user connected');
   socket.on('createMessage', (message, callback) => {
-    console.log('createMessage: ', message);
+    console.log('createMessage: ', message.text);
 
-    swapi.get('http://swapi.co/api/people/?page=2').then((result) => {
-    console.log(result.results[0].name);
-    socket.emit('newMessage', result.results[0].name);
+    swapi.get(`http://swapi.co/api/${message.text}`).then((result) => {
+    console.log('result: ', result.name);
+    socket.emit('newMessage', result.name);
 
   }).catch((err) => {
     console.log(err);
