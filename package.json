@@ -14,6 +14,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "socket.io": "^2.0.4",
+    "swapi-node": "^0.4.3",
     "yoda-speak": "^0.1.1"
   },
   "devDependencies": {

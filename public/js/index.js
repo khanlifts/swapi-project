@@ -4,7 +4,7 @@ socket.on('newMessage', function(message) {
   console.log(message);
 
   var li = jQuery('<li></li>');
-  li.text(`${message.text}`);
+  li.text(`${message}`);
   jQuery('#messages').append(li);
 });
 
