@@ -58,6 +58,10 @@ li {
   color: #fff;
   list-style-type: none; }
 
+.row {
+  font-family: 'Poller One', cursive;
+  font-size: 2rem; }
+
 .yodaInput {
   width: 80%;
   height: 3em;
@@ -91,6 +95,19 @@ li {
 
 .yodaBtn:active {
   transform: translateY(-2px); }
+
+.row {
+  max-width: 114rem;
+  background-color: #eee;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2);
+    background-color: orangered;
+    float: left; }
+    .row .col-1-of-2:not(:last-child) {
+      margin-right: 6rem; }
 
 #gitHub {
   position: absolute;
