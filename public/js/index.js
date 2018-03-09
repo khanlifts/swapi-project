@@ -4,12 +4,30 @@ var maxAppend = 0;
 // on message reception
 socket.on('newMessage', function(message) {
   console.log(message);
+  if (maxAppend >= 12) {
+    return;
+  } else if (maxAppend >= 8) {
+    var liRow = jQuery('<div class="row"></div>');
+    var liCol = jQuery('<div class="col-1-of-4"></div>');
+    liCol.text(`${message}`);
+    jQuery('#returnInfo2').append(liCol);
+    maxAppend++;
+    return;
+  } else if (maxAppend >= 4) {
+    var liRow = jQuery('<div class="row"></div>');
+    var liCol = jQuery('<div class="col-1-of-4"></div>');
+    liCol.text(`${message}`);
+    jQuery('#returnInfo1').append(liCol);
+    maxAppend++;
+    return;
+  } else {
+    var liRow = jQuery('<div class="row"></div>');
+    var liCol = jQuery('<div class="col-1-of-4"></div>');
+    liCol.text(`${message}`);
+    jQuery('#returnInfo').append(liCol);
+    maxAppend++;
+  }
 
-  var li = jQuery('<div class="col-1-of-3"><li></li></div>');
-  li.text(`${message}`);
-  if (maxAppend % 3 == 0) return;
-  jQuery('#returnInfo').append(li);
-  maxAppend++;
 });
 
 // on form submit

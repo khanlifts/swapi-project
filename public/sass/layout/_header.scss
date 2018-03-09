@@ -11,7 +11,6 @@
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 
   &__text-box {
     position: absolute;
@@ -20,4 +19,11 @@
     transform: translate(-50%, -50%);
     text-align: center;
   }
+}
+
+.output {
+  height: 40rem;
+  background-color: $color-output;
+  background-image: linear-gradient(to top, rgba($color-gray-light, 0.2), rgba($color-black, 0.2));
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
