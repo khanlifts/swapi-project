@@ -1,3 +1,11 @@
+@keyframes cardIntro {
+  0% {
+    opacity: 0;
+    transform: translateY(5px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 *,
 *::before,
 *::after {
@@ -64,14 +72,14 @@ li {
   font-size: 2rem; }
 
 .yodaInput {
-  width: 80%;
+  width: 50%;
   height: 3em;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.5);
   border: 0px; }
 
 .yodaBtn {
-  width: 80%;
+  width: 50%;
   padding: 15px 40px;
   margin: 20px auto;
   border-radius: 100px;
@@ -99,11 +107,12 @@ li {
 
 .row {
   position: relative;
-  top: 10%;
+  top: 5%;
   max-width: 100rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0; }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 3rem; }
   .row::after {
     content: "";
     display: table;
@@ -118,7 +127,15 @@ li {
   .row .col-1-of-3 {
     width: calc((100% - 2* 6rem) / 3); }
   .row .col-1-of-4 {
-    width: calc((100% - 3* 6rem) / 4); }
+    width: calc((100% - 3* 6rem) / 4);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    background-color: #365190;
+    border-radius: 2%;
+    letter-spacing: 1px;
+    box-shadow: rgba(41, 168, 88, 0.4) -5px 5px 15px 1px;
+    animation: cardIntro 1s forwards; }
   .row .col-2-of-3 {
     width: calc(2 * ((100% - 2* 6rem) / 3) + 6rem); }
   .row .col-2-of-4 {
@@ -133,7 +150,7 @@ li {
   border: 0; }
 
 .header {
-  height: 95vh;
+  height: 60vh;
   background-image: linear-gradient(to bottom, rgba(54, 81, 144, 0.2), rgba(0, 0, 0, 0.2)), url("/css/star-wars-background.png");
   background-size: cover;
   background-position: top;
@@ -143,7 +160,8 @@ li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; }
+    text-align: center;
+    width: 90%; }
 
 .output {
   height: 40rem;

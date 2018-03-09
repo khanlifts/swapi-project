@@ -1,6 +1,5 @@
-
 .yodaInput {
-  width: 80%;
+  width: $form-width;
   height: 3em;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.5);
@@ -8,7 +7,7 @@
 }
 
 .yodaBtn {
-  width: 80%;
+  width: $form-width;
   padding: 15px 40px;
   margin: 20px auto;
   border-radius: 100px;

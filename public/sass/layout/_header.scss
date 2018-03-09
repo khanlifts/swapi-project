@@ -6,7 +6,7 @@
 }
 
 .header {
-  height: 95vh;
+  height: 60vh;
   background-image: linear-gradient(to bottom, rgba($color-gray-light, 0.2), rgba($color-black, 0.2)), url('/css/star-wars-background.png');
   background-size: cover;
   background-position: top;
@@ -18,12 +18,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 90%;
   }
-}
-
-.output {
-  height: 40rem;
-  background-color: $color-output;
-  background-image: linear-gradient(to top, rgba($color-gray-light, 0.2), rgba($color-black, 0.2));
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }

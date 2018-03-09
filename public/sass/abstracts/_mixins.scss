@@ -5,3 +5,14 @@
     clear: both;
   }
 }
+
+@mixin cards {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  background-color: #365190;
+  border-radius: 2%;
+  letter-spacing: 1px;
+  box-shadow: rgba(41, 168, 88, 0.4) -5px 5px 15px 1px;
+  animation: cardIntro 1s forwards;
+}
