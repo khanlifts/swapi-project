@@ -171,6 +171,15 @@ li {
     text-align: center;
     width: 90%; }
 
+canvas {
+  height: 60% !important; }
+
+.background {
+  position: absolute;
+  height: 10rem;
+  top: 0;
+  left: 0; }
+
 .heading-primary--main {
   animation: titleIntro 1s ease-out; }
 

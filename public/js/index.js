@@ -1,5 +1,16 @@
 var socket = io();
 
+// particles.js
+window.onload = function() {
+  Particles.init({
+    selector: '.background',
+    maxParticles: 10,
+    speed: 0.4,
+    color: '#fff',
+    minDistance: 120
+  });
+};
+
 var maxAppend = 0;
 // on message reception
 socket.on('newMessage', function(message) {

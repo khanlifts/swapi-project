@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
+    "particlesjs": "^2.2.1",
     "socket.io": "^2.0.4",
     "swapi-node": "^0.4.3"
   },
