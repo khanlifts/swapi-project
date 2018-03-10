@@ -24,7 +24,7 @@ io.on('connection', (socket) => {
     socket.emit('newMessage', result.name);
 
   }).catch((err) => {
-    console.log(err);
+    socket.emit('newMessage', 'Sorry, no info');
   });
 
   });
