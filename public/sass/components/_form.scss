@@ -15,24 +15,26 @@
   position: relative;
   background: rgba(41, 168, 88, 0.4);
   border: 0px;
-}
+  outline-style: none;
 
-.yodaBtn:link,
-.yodaBtn:visited {
-  padding: 15px 40px;
-  display: inline-block;
-  border-radius: 100px;
-  transition: all .2s;
-  position: relative;
-  background: rgba(0, 0, 0, 0.5);
-}
+  &:link,
+  &:visited {
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+  }
 
-.yodaBtn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-  cursor: pointer;
-}
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
 
-.yodaBtn:active {
-  transform: translateY(-2px);
+  &:active {
+    transform: translateY(-2px);
+  }
+
 }

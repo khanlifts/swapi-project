@@ -46,14 +46,14 @@ jQuery('#messages').on('submit', function(e) {
   e.preventDefault();
 
   var optionSelect = jQuery('[name=option]')
-  var messageTextbox = jQuery('[name=number]');
+  var messageNumberbox = jQuery('[name=number]');
 
   socket.emit('createMessage', {
-    number: messageTextbox.val(),
-    option: optionSelect.val()
+    option: optionSelect.val(),
+    number: messageNumberbox.val()
   }, function () {
-    messageTextbox.val('');
-    optionSelect.val('');
+    optionSelect.val();
+    messageNumberbox.val();
   })
 
 });
