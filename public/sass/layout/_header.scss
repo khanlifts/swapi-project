@@ -21,3 +21,11 @@
     width: 90%;
   }
 }
+
+.heading-primary--main {
+  animation: titleIntro 1s ease-out;
+}
+
+.heading-primary--sub {
+  animation: cardIntro 1.5s ease-out;
+}

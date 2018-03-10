@@ -1,3 +1,11 @@
+@keyframes titleIntro {
+  0% {
+    transform: translateX(-10rem); }
+  75% {
+    transform: translateX(3rem); }
+  100% {
+    transform: translateX(0); } }
+
 @keyframes cardIntro {
   0% {
     opacity: 0;
@@ -162,6 +170,12 @@ li {
     transform: translate(-50%, -50%);
     text-align: center;
     width: 90%; }
+
+.heading-primary--main {
+  animation: titleIntro 1s ease-out; }
+
+.heading-primary--sub {
+  animation: cardIntro 1.5s ease-out; }
 
 .output {
   height: 40rem;
