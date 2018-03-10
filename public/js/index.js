@@ -11,12 +11,16 @@ window.onload = function() {
   });
 };
 
-// counters
+// counters & buttonId
 var maxAppend = 0;
 var round = 1;
+var submitButton = jQuery('#yodaBtn');
+var messageNumberbox = jQuery('[name=number]');
 // on message reception
 socket.on('newMessage', function(message) {
   console.log(message);
+  submitButton.removeAttr('disabled').text('Get Data');
+  messageNumberbox.val('');
   if (maxAppend >= 12) {
     round =+ 1;
     alert(`Here comes round ${round}`);
@@ -54,12 +58,11 @@ jQuery('#messages').on('submit', function(e) {
   var optionSelect = jQuery('[name=option]')
   var messageNumberbox = jQuery('[name=number]');
 
+  submitButton.attr('disabled', 'disabled').text('Loading...');
+
   socket.emit('createMessage', {
     option: optionSelect.val(),
     number: messageNumberbox.val()
-  }, function () {
-    optionSelect.val();
-    messageNumberbox.val();
   })
 
 });
