@@ -11,6 +11,7 @@ window.onload = function() {
   });
 };
 
+// counters
 var maxAppend = 0;
 var round = 1;
 // on message reception
