@@ -112,6 +112,31 @@ li {
   .yodaBtn:active {
     transform: translateY(-2px); }
 
+button#resetBtn {
+  width: calc($form-width * 0.5);
+  padding: 1rem 2rem;
+  color: #fff;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
+  background: rgba(41, 168, 88, 0.4);
+  border: 0px;
+  outline-style: inherit; }
+  button#resetBtn:link, button#resetBtn:visited {
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    outline-style: inherit; }
+  button#resetBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer; }
+  button#resetBtn:active {
+    transform: translateY(-2px); }
+
 .row {
   position: relative;
   top: 5%;

@@ -66,3 +66,13 @@ jQuery('#messages').on('submit', function(e) {
   })
 
 });
+
+// on button reset
+jQuery('#resetBtn').on('click', function() {
+  console.log('resetBtn fired on click');
+
+  // remove cards in the DOM
+  jQuery(".col-1-of-4").remove();
+
+  socket.emit('resetMessage', {});
+});

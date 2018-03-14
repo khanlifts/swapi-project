@@ -21,12 +21,15 @@ app.use(express.static(publicPath));
 
 io.on('connection', (socket) => {
   console.log('New user connected');
+
+  // on createMessage
   socket.on('createMessage', (message, callback) => {
     console.log('createMessage: ', message.option, message.number);
 
     swapi.get(`http://swapi.co/api/${message.option}/${message.number}/`).then((result) => {
     console.log('result: ', result.name);
 
+    // save card
     var card = new Card({
       name: result.name
     });
@@ -44,6 +47,14 @@ io.on('connection', (socket) => {
   });
 
   });
+
+  // on resetBtn
+  socket.on('resetMessage', () => {
+    Card.remove({}, (err) => {
+      if (err) return handleError(err);
+    })
+    console.log('Removed all Cards');
+  })
 });
 
 // SOME SIMPLE MONGOOSE ACTIONS

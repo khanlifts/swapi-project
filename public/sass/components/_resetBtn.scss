@@ -1,0 +1,33 @@
+button#resetBtn {
+    width: calc($form-width * 0.5);
+    padding: 1rem 2rem;
+    color: $color-white;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    background: rgba(41, 168, 88, 0.4);
+    border: 0px;
+    outline-style: inherit;
+
+
+    &:link,
+    &:visited {
+      padding: 1.5rem 4rem;
+      display: inline-block;
+      border-radius: 100px;
+      transition: all .2s;
+      position: relative;
+      background: rgba(0, 0, 0, 0.5);
+      outline-style: inherit;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+
+    &:active {
+      transform: translateY(-2px);
+    }
+}
