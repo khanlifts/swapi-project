@@ -57,17 +57,6 @@ io.on('connection', (socket) => {
   })
 });
 
-// SOME SIMPLE MONGOOSE ACTIONS
-// var card1 = new Card({name: 'Leia'});
-// card1.save((err, card) => {
-//   if (err) return console.log(err);
-//   console.log(`Saved Card: ${card.name}`);;
-// });
-//
-// Card.find((err, cards) => {
-//   if (err) return console.log(err);
-//   console.log(cards);
-// });
 
 server.listen(port, () => {
   console.log(`Listening on port ${port}`);

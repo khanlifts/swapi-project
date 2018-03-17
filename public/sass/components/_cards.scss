@@ -1,0 +1,18 @@
+.cards {
+  width: calc((100% - 3* #{$gutter-horizontal}) / 4);
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  background-color: #365190;
+  border-radius: 2%;
+  letter-spacing: 1px;
+  box-shadow: rgba(41, 168, 88, 0.4) -5px 5px 15px 1px;
+  animation: cardIntro 1s forwards;
+  cursor: pointer;
+  float: left;
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: $gutter-horizontal;
+  }
+}

@@ -24,26 +24,23 @@ socket.on('newMessage', function(message) {
   if (maxAppend >= 12) {
     round =+ 1;
     alert(`Here comes round ${round}`);
-    jQuery(".col-1-of-4").remove()
+    jQuery(".cards").remove()
     maxAppend = 0;
     return;
   } else if (maxAppend >= 8) {
-    var liRow = jQuery('<div class="row"></div>');
-    var liCol = jQuery('<div class="col-1-of-4"></div>');
+    var liCol = jQuery('<div class="cards"></div>');
     liCol.text(`${message}`);
     jQuery('#returnInfo2').append(liCol);
     maxAppend++;
     return;
   } else if (maxAppend >= 4) {
-    var liRow = jQuery('<div class="row"></div>');
-    var liCol = jQuery('<div class="col-1-of-4"></div>');
+    var liCol = jQuery('<div class="cards"></div>');
     liCol.text(`${message}`);
     jQuery('#returnInfo1').append(liCol);
     maxAppend++;
     return;
   } else {
-    var liRow = jQuery('<div class="row"></div>');
-    var liCol = jQuery('<div class="col-1-of-4"></div>');
+    var liCol = jQuery('<div class="cards"></div>');
     liCol.text(`${message}`);
     jQuery('#returnInfo').append(liCol);
     maxAppend++;
@@ -72,7 +69,7 @@ jQuery('#resetBtn').on('click', function() {
   console.log('resetBtn fired on click');
 
   // remove cards in the DOM
-  jQuery(".col-1-of-4").remove();
+  jQuery(".cards").remove();
 
   socket.emit('resetMessage', {});
 });
