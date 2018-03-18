@@ -4,9 +4,9 @@ const http = require('http');
 const socketIO = require('socket.io');
 const swapi = require('swapi-node');
 
-const {ObjectID} = require('mongodb');
-const {mongoose} = require('./db/mongoose');
-const {Card} = require('./models/card');
+// const {ObjectID} = require('mongodb');
+// const {mongoose} = require('./db/mongoose');
+// const {Card} = require('./models/card');
 const {generateMessage} = require('./utils/message');
 
 const publicPath = path.join(__dirname, '../public');
@@ -30,14 +30,14 @@ io.on('connection', (socket) => {
     console.log('result: ', result.name);
 
     // save card
-    var card = new Card({
-      name: result.name
-    });
-
-    card.save((err, card) => {
-      if (err) return console.log(err);
-      console.log(`Saved Card: ${card.name}`);;
-    });
+    // var card = new Card({
+    //   name: result.name
+    // });
+    //
+    // card.save((err, card) => {
+    //   if (err) return console.log(err);
+    //   console.log(`Saved Card: ${card.name}`);;
+    // });
 
     socket.emit('newMessage', result.name);
 
@@ -50,10 +50,10 @@ io.on('connection', (socket) => {
 
   // on resetBtn
   socket.on('resetMessage', () => {
-    Card.remove({}, (err) => {
-      if (err) return handleError(err);
-    })
-    console.log('Removed all Cards');
+    // Card.remove({}, (err) => {
+    //   if (err) return handleError(err);
+    // })
+    // console.log('Removed all Cards');
   })
 });
 

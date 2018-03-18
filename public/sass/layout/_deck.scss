@@ -1,0 +1,59 @@
+.deck {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  background-image: linear-gradient(to top, rgba($color-deck-light, 1), rgba($color-deck-dark, 1));
+  width: 100%;
+  padding: inherit;
+  text-align: center;
+
+}
+
+.row__deck {
+  position: relative;
+  top: 10%;
+  max-width: $grid-width;
+  margin: 0 auto;
+  padding: 0;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  @include clearfix;
+  }
+
+.deck__col-1-of-3 {
+  position: relative;
+  width: calc((100% - 2* #{$gutter-horizontal}) / 3);
+  color: white;
+  float: left;
+
+  &:not(:last-child) {
+    margin-right: $gutter-horizontal;
+  }
+}
+
+.deck-card {
+  width: 90%;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  background-color: #365190;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  box-shadow: black -5px 5px 20px 1px;
+  animation: cardIntro 1s forwards;
+  cursor: pointer;
+  float: left;
+  display: inline-block;
+  visibility: hidden;
+
+  &:not(:last-child) {
+    margin-right: $gutter-horizontal;
+  }
+
+  &:hover {
+
+  }
+}

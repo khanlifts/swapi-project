@@ -21,6 +21,26 @@ socket.on('newMessage', function(message) {
   console.log(message);
   submitButton.removeAttr('disabled').text('Get Data');
   messageNumberbox.val('');
+
+  // append in deck
+  if (maxAppend < 4) {
+    var li = jQuery('<li></li>');
+    li.text(`${message}`);
+    jQuery('#deck1').css('visibility', 'visible');
+    jQuery('#deck1').append(li);
+  } else if (maxAppend < 8) {
+    var li = jQuery('<li></li>');
+    li.text(`${message}`);
+    jQuery('#deck2').css('visibility', 'visible');
+    jQuery('#deck2').append(li);
+  } else if (maxAppend < 12) {
+    var li = jQuery('<li></li>');
+    li.text(`${message}`);
+    jQuery('#deck3').css('visibility', 'visible');
+    jQuery('#deck3').append(li);
+  }
+
+  // append in cards
   if (maxAppend >= 12) {
     round =+ 1;
     alert(`Here comes round ${round}`);
@@ -71,5 +91,6 @@ jQuery('#resetBtn').on('click', function() {
   // remove cards in the DOM
   jQuery(".cards").remove();
 
-  socket.emit('resetMessage', {});
+  // temporarily commenting out the delete process of db
+  // socket.emit('resetMessage', {});
 });
