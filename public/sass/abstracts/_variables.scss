@@ -4,8 +4,6 @@ $color-black: black;
 $color-white: #fff;
 $color-output: #010F26;
 $color-yoda: rgba(41, 168, 88, 0.4);
-$color-deck-light: rgb(104, 145, 174);
-$color-deck-dark: rgb(12, 31, 63);
 
 // GRID
 $grid-width: 100rem;
@@ -15,5 +13,9 @@ $gutter-horizontal: 6rem;
 // FORM
 $form-width: 50%;
 
-// 1rem
+// DECK
+$color-deck-light: #6891ae;
+$color-deck-dark: #0c1f3f;
+
+// FONT
 $base-font-size: 62.5%;
