@@ -35,6 +35,12 @@ html {
 body {
   box-sizing: border-box; }
 
+.stars {
+  background-image: url("/css/stars.jpg");
+  position: relative;
+  bottom: 0px;
+  right: 0px; }
+
 body {
   font-weight: 400;
   line-height: 1.7;
