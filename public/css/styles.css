@@ -95,6 +95,33 @@ li {
   .cards:not(:last-child) {
     margin-right: 6rem; }
 
+button.deckBtn {
+  width: 3rem;
+  padding: .5rem 1rem;
+  color: #fff;
+  border-radius: 4px;
+  transition: all .2s;
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+  background: rgba(41, 168, 88, 0.3);
+  border: 1px solid #29a858;
+  outline-style: inherit; }
+  button.deckBtn:link, button.deckBtn:visited {
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    outline-style: inherit; }
+  button.deckBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer; }
+  button.deckBtn:active {
+    transform: translateY(-2px); }
+
 .yodaInput {
   width: 50%;
   height: 3em;
