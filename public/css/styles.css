@@ -14,6 +14,14 @@
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes cardOutro {
+  0% {
+    opacity: 1;
+    transform: translateY(5px); }
+  100% {
+    opacity: 0;
+    transform: translateY(0); } }
+
 *,
 *::before,
 *::after {
@@ -93,6 +101,23 @@ li {
   float: left;
   display: inline-block; }
   .cards:not(:last-child) {
+    margin-right: 6rem; }
+
+.deck-card {
+  width: 90%;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  background-color: #365190;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  box-shadow: black -5px 5px 20px 1px;
+  animation: cardIntro 1s forwards;
+  cursor: pointer;
+  float: left;
+  display: inline-block;
+  visibility: hidden; }
+  .deck-card:not(:last-child) {
     margin-right: 6rem; }
 
 button.deckBtn {
@@ -208,23 +233,6 @@ button#resetBtn {
   color: white;
   float: left; }
   .deck__col-1-of-3:not(:last-child) {
-    margin-right: 6rem; }
-
-.deck-card {
-  width: 90%;
-  text-align: center;
-  color: white;
-  padding: 1rem;
-  background-color: #365190;
-  border-radius: 10px;
-  letter-spacing: 1px;
-  box-shadow: black -5px 5px 20px 1px;
-  animation: cardIntro 1s forwards;
-  cursor: pointer;
-  float: left;
-  display: inline-block;
-  visibility: hidden; }
-  .deck-card:not(:last-child) {
     margin-right: 6rem; }
 
 .row {

@@ -33,27 +33,3 @@
     margin-right: $gutter-horizontal;
   }
 }
-
-.deck-card {
-  width: 90%;
-  text-align: center;
-  color: white;
-  padding: 1rem;
-  background-color: #365190;
-  border-radius: 10px;
-  letter-spacing: 1px;
-  box-shadow: black -5px 5px 20px 1px;
-  animation: cardIntro 1s forwards;
-  cursor: pointer;
-  float: left;
-  display: inline-block;
-  visibility: hidden;
-
-  &:not(:last-child) {
-    margin-right: $gutter-horizontal;
-  }
-
-  &:hover {
-
-  }
-}

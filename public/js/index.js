@@ -44,7 +44,7 @@ socket.on('newMessage', function(message) {
   if (maxAppend >= 12) {
     round =+ 1;
     alert(`Here comes round ${round}`);
-    jQuery(".cards").remove()
+    jQuery('.cards').remove();
     maxAppend = 0;
     return;
   } else if (maxAppend >= 8) {
@@ -84,13 +84,30 @@ jQuery('#messages').on('submit', function(e) {
 
 });
 
-// on button reset
+// on form button reset
 jQuery('#resetBtn').on('click', function() {
   console.log('resetBtn fired on click');
 
   // remove cards in the DOM
-  jQuery(".cards").remove();
+  jQuery('.cards').remove();
+  maxAppend = 0;
 
   // temporarily commenting out the delete process of db
   // socket.emit('resetMessage', {});
+});
+
+// on deck button reset
+jQuery('#deckBtn1').on('click', function() {
+  console.log('deckBtn1 fired');
+  jQuery('#deck1').css('visibility', 'hidden').text('');
+});
+
+jQuery('#deckBtn2').on('click', function() {
+  console.log('deckBtn2 fired');
+  jQuery('#deck2').css('visibility', 'hidden').text('');
+});
+
+jQuery('#deckBtn3').on('click', function() {
+  console.log('deckBtn3 fired');
+  jQuery('#deck3').css('visibility', 'hidden').text('');
 });
