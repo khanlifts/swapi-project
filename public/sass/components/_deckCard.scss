@@ -12,6 +12,8 @@
   float: left;
   display: inline-block;
   visibility: hidden;
+  margin-top: $gutter-vertical;
+  margin-bottom: $gutter-vertical;
 
   &:not(:last-child) {
     margin-right: $gutter-horizontal;
