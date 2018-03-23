@@ -1,0 +1,9 @@
+.newDeck {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  background-image: linear-gradient(to top, rgba($color-deck-light, 1), rgba($color-deck-dark, 1));
+  width: 100%;
+  padding: inherit;
+  text-align: center;
+}
