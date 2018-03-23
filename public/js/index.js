@@ -111,3 +111,9 @@ jQuery('#deckBtn3').on('click', function() {
   console.log('deckBtn3 fired');
   jQuery('#deck3').css('visibility', 'hidden').text('');
 });
+
+// on card click to flip
+jQuery('#card').on('click', function() {
+  console.log('flipped card');
+  jQuery('#card').toggleClass('flipped');
+});
