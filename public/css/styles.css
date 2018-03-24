@@ -50,6 +50,7 @@ body {
   font-family: 'Poller One', cursive;
   color: #fff;
   text-transform: uppercase;
+  padding-top: 3rem;
   margin-bottom: 3rem; }
   .heading-primary--main {
     display: block;
@@ -160,29 +161,41 @@ button.deckBtn {
   position: relative;
   perspective: 800px; }
 
-#card {
+.card {
   width: 100%;
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
   transition: transform 1s; }
+  .card figure {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    box-shadow: rgba(41, 168, 88, 0.4) -5px 5px 15px 1px; }
+    .card figure li {
+      font-family: Verdana;
+      padding: 1.5rem;
+      font-size: 2.2rem; }
+  .card .front {
+    background: #365190; }
+  .card .back {
+    background: #29a858;
+    transform: rotateY(180deg);
+    color: #fff;
+    line-height: 20rem;
+    font-family: inherit;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center; }
+    .card .back span {
+      vertical-align: middle;
+      line-height: normal; }
 
-#card figure {
-  margin: 0;
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden; }
-
-#card .front {
-  background: #365190; }
-
-#card .back {
-  background: blue;
-  transform: rotateY(180deg); }
-
-#card.flipped {
+.card.flipped {
   transform: rotateY(180deg); }
 
 .yodaInput {
@@ -252,15 +265,15 @@ button#resetBtn {
   padding: inherit;
   text-align: center; }
 
-.row__deck {
+.deck__row {
   position: relative;
   top: 10%;
   max-width: 100rem;
   margin: 0 auto;
-  padding: 0; }
-  .row__deck:not(:last-child) {
+  padding: 2rem; }
+  .deck__row:not(:last-child) {
     margin-bottom: 3rem; }
-  .row__deck::after {
+  .deck__row::after {
     content: "";
     display: table;
     clear: both; }
@@ -272,15 +285,6 @@ button#resetBtn {
   float: left; }
   .deck__col-1-of-3:not(:last-child) {
     margin-right: 6rem; }
-
-.newDeck {
-  position: relative;
-  bottom: 0px;
-  left: 0px;
-  background-image: linear-gradient(to top, #6891ae, #0c1f3f);
-  width: 100%;
-  padding: inherit;
-  text-align: center; }
 
 .row {
   position: relative;
@@ -355,4 +359,4 @@ canvas {
   height: 40rem;
   background-color: #010F26;
   background-image: linear-gradient(to top, rgba(54, 81, 144, 0.2), rgba(0, 0, 0, 0.2));
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%); }
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%); }

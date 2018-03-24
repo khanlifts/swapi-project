@@ -21,14 +21,14 @@ socket.on('newMessage', function(message) {
   console.log(message);
   submitButton.removeAttr('disabled').text('Get Data');
   messageNumberbox.val('');
-  
+
   // append in newDeck
 if (maxAppend < 4) {
   var li = jQuery('<li></li>');
   li.text(`${message}`);
   jQuery('#card').css('visibility', 'visible');
   jQuery('#card__figure1').append(li);
-} 
+}
 
   // append in deck
   if (maxAppend < 4) {
@@ -121,8 +121,17 @@ jQuery('#deckBtn3').on('click', function() {
 });
 
 // on card click to flip
-jQuery('#card').on('click', function() {
+jQuery('#card1').on('click', function() {
   console.log('flipped card');
-  jQuery('#card').toggleClass('flipped');
+  jQuery('#card1').toggleClass('flipped');
 });
 
+jQuery('#card2').on('click', function() {
+  console.log('flipped card');
+  jQuery('#card2').toggleClass('flipped');
+});
+
+jQuery('#card3').on('click', function() {
+  console.log('flipped card');
+  jQuery('#card3').toggleClass('flipped');
+});
