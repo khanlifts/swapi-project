@@ -22,32 +22,6 @@ socket.on('newMessage', function(message) {
   submitButton.removeAttr('disabled').text('Get Data');
   messageNumberbox.val('');
 
-  // append in newDeck
-if (maxAppend < 4) {
-  var li = jQuery('<li></li>');
-  li.text(`${message}`);
-  jQuery('#card').css('visibility', 'visible');
-  jQuery('#card__figure1').append(li);
-}
-
-  // append in deck
-  if (maxAppend < 4) {
-    var li = jQuery('<li></li>');
-    li.text(`${message}`);
-    jQuery('#deck1').css('visibility', 'visible');
-    jQuery('#deck1').append(li);
-  } else if (maxAppend < 8) {
-    var li = jQuery('<li></li>');
-    li.text(`${message}`);
-    jQuery('#deck2').css('visibility', 'visible');
-    jQuery('#deck2').append(li);
-  } else if (maxAppend < 12) {
-    var li = jQuery('<li></li>');
-    li.text(`${message}`);
-    jQuery('#deck3').css('visibility', 'visible');
-    jQuery('#deck3').append(li);
-  }
-
   // append in cards
   if (maxAppend >= 12) {
     round =+ 1;
@@ -59,18 +33,33 @@ if (maxAppend < 4) {
     var liCol = jQuery('<div class="cards"></div>');
     liCol.text(`${message}`);
     jQuery('#returnInfo2').append(liCol);
+
+    var li = jQuery('<li></li>');
+    li.text(`${message}`);
+    jQuery('#card__figure3').append(li);
+
     maxAppend++;
     return;
   } else if (maxAppend >= 4) {
     var liCol = jQuery('<div class="cards"></div>');
     liCol.text(`${message}`);
     jQuery('#returnInfo1').append(liCol);
+
+    var li = jQuery('<li></li>');
+    li.text(`${message}`);
+    jQuery('#card__figure2').append(li);
+
     maxAppend++;
     return;
   } else {
     var liCol = jQuery('<div class="cards"></div>');
     liCol.text(`${message}`);
     jQuery('#returnInfo').append(liCol);
+
+    var li = jQuery('<li></li>');
+    li.text(`${message}`);
+    jQuery('#card__figure1').append(li);
+
     maxAppend++;
   }
 
@@ -98,26 +87,10 @@ jQuery('#resetBtn').on('click', function() {
 
   // remove cards in the DOM
   jQuery('.cards').remove();
-  maxAppend = 0;
+  // maxAppend = 0;
 
   // temporarily commenting out the delete process of db
   // socket.emit('resetMessage', {});
-});
-
-// on deck button reset
-jQuery('#deckBtn1').on('click', function() {
-  console.log('deckBtn1 fired');
-  jQuery('#deck1').css('visibility', 'hidden').text('');
-});
-
-jQuery('#deckBtn2').on('click', function() {
-  console.log('deckBtn2 fired');
-  jQuery('#deck2').css('visibility', 'hidden').text('');
-});
-
-jQuery('#deckBtn3').on('click', function() {
-  console.log('deckBtn3 fired');
-  jQuery('#deck3').css('visibility', 'hidden').text('');
 });
 
 // on card click to flip
