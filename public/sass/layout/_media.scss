@@ -1,3 +1,9 @@
 @media (max-width: 768px) {
   html {font-size: calc(#{$base-font-size} * 0.6);}
+  .deck__col-1-of-3:last-child {
+    display: none;
+  }
+  .deck__col-1-of-3 {
+    margin-left: 3.7rem;
+  }
 }

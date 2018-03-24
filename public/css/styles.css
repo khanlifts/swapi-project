@@ -109,25 +109,6 @@ li {
   .cards:not(:last-child) {
     margin-right: 6rem; }
 
-.deck-card {
-  width: 90%;
-  text-align: center;
-  color: white;
-  padding: 1rem;
-  background-color: #365190;
-  border-radius: 10px;
-  letter-spacing: 1px;
-  box-shadow: black -5px 5px 20px 1px;
-  animation: cardIntro 1s forwards;
-  cursor: pointer;
-  float: left;
-  display: inline-block;
-  visibility: hidden;
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
-  .deck-card:not(:last-child) {
-    margin-right: 6rem; }
-
 button.deckBtn {
   width: 3rem;
   padding: .5rem 1rem;
@@ -156,10 +137,10 @@ button.deckBtn {
     transform: translateY(-2px); }
 
 .card-container {
-  width: 200px;
-  height: 260px;
+  width: 20rem;
+  height: 26rem;
   position: relative;
-  perspective: 800px; }
+  perspective: 80rem; }
 
 .card {
   width: 100%;
@@ -175,7 +156,7 @@ button.deckBtn {
     height: 100%;
     backface-visibility: hidden;
     border-radius: 5px;
-    box-shadow: rgba(41, 168, 88, 0.4) -5px 5px 15px 1px;
+    box-shadow: rgba(41, 168, 88, 0.4) -0.5rem 0.5rem 1.5rem 0.1rem;
     cursor: pointer; }
     .card figure li {
       font-family: Verdana;
@@ -271,7 +252,7 @@ button#resetBtn {
   top: 10%;
   max-width: 100rem;
   margin: 0 auto;
-  padding: 2rem; }
+  padding: 2rem 0 4rem 4rem; }
   .deck__row:not(:last-child) {
     margin-bottom: 3rem; }
   .deck__row::after {
@@ -354,7 +335,11 @@ canvas {
 
 @media (max-width: 768px) {
   html {
-    font-size: calc(62.5% * 0.6); } }
+    font-size: calc(62.5% * 0.6); }
+  .deck__col-1-of-3:last-child {
+    display: none; }
+  .deck__col-1-of-3 {
+    margin-left: 3.7rem; } }
 
 .output {
   height: 40rem;

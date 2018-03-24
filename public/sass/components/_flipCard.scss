@@ -1,8 +1,8 @@
 .card-container {
-  width: 200px;
-  height: 260px;
+  width: 20rem;
+  height: 26rem;
   position: relative;
-  perspective: 800px;
+  perspective: 80rem;
 }
 
 .card {
@@ -19,7 +19,7 @@
     height: 100%;
     backface-visibility: hidden;
     border-radius: 5px;
-    box-shadow: rgba(41, 168, 88, 0.4) -5px 5px 15px 1px;
+    box-shadow: rgba(41, 168, 88, 0.4) -0.5rem 0.5rem 1.5rem 0.1rem;
     cursor: pointer;
     li {
       font-family: Verdana;
