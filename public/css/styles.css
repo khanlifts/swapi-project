@@ -175,7 +175,8 @@ button.deckBtn {
     height: 100%;
     backface-visibility: hidden;
     border-radius: 5px;
-    box-shadow: rgba(41, 168, 88, 0.4) -5px 5px 15px 1px; }
+    box-shadow: rgba(41, 168, 88, 0.4) -5px 5px 15px 1px;
+    cursor: pointer; }
     .card figure li {
       font-family: Verdana;
       padding: 1.5rem;
