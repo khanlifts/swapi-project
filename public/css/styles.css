@@ -343,6 +343,7 @@ canvas {
 
 .output {
   height: 40rem;
+  padding: 3rem;
   background-color: #010F26;
   background-image: linear-gradient(to top, rgba(54, 81, 144, 0.2), rgba(0, 0, 0, 0.2));
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%); }

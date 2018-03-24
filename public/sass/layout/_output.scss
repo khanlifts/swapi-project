@@ -1,5 +1,6 @@
 .output {
   height: 40rem;
+  padding: 3rem;
   background-color: $color-output;
   background-image: linear-gradient(to top, rgba($color-gray-light, 0.2), rgba($color-black, 0.2));
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
