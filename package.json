@@ -1,7 +1,7 @@
 {
-  "name": "yoda-translator",
+  "name": "swapi-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Fetch Star Wars data and memorize it",
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
@@ -9,7 +9,7 @@
     "test-watch": "nodemon --exec npm 'test'",
     "sass:compile": "node-sass public/sass/main.scss public/css/styles.css -w"
   },
-  "author": "",
+  "author": "Cyril Khan",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
