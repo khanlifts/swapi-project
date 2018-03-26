@@ -40,6 +40,16 @@ body {
   position: relative;
   bottom: 0px;
   right: 0px; }
+  .stars__memo {
+    letter-spacing: .5rem;
+    color: #4bd5ee;
+    font-weight: 700;
+    font-size: 6rem;
+    text-align: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 6rem; }
 
 body {
   font-weight: 400;
