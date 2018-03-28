@@ -4,8 +4,6 @@ const http = require('http');
 const socketIO = require('socket.io');
 const swapi = require('swapi-node');
 
-const {generateMessage} = require('./utils/message');
-
 const publicPath = path.join(__dirname, '../public');
 const port = process.env.PORT || 3000;
 
