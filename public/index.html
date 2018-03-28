@@ -9,12 +9,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>
   </head>
   <body>
+  <!-- Stars Background -->
    <div class="stars">
+    <!-- Header -->
     <div class="header">
       <a href="https://github.com/khanlifts/yoda-translator">
         <img id="gitHub" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
       </a>
       <canvas class="background"></canvas>
+      <!-- Input Area  -->
       <div class="header__text-box" id="header__text-box">
           <h1 class="heading-primary">
             <span class="heading-primary--main">Memorize Star Wars</span>
@@ -35,16 +38,17 @@
         </form>
         <button id="resetBtn">Reset</button>
       </div>
+    <!-- End Input Area -->
     </div>
-
+   <!-- End Header  -->
     <div class="output">
       <div class="row" id="returnInfo"></div>
       <div class="row" id="returnInfo1"></div>
       <div class="row" id="returnInfo2"></div>
     </div>
 
-    <h1 class="stars__memo">Now memorize it</h1>  
-
+    <h1 class="stars__memo">Now memorize it</h1>
+    <!-- Cards -->
     <div class="deck">
       <h1 class="heading-primary heading-primary--main">Your Deck</h1>
       <div class="deck__row">
@@ -74,29 +78,25 @@
         </div>
       </div>
     </div>
+    <!-- End Cards -->
     <!-- Intro -->
     <div class="star-wars-intro">
       <div class="fade"></div>
-
       <section class="star-wars">
-
         <div class="crawl">
-
           <div class="title">
             <p>Episode IV</p>
             <h1>Memorize Star Wars</h1>
           </div>
-
           <p>It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.</p>
           <p>During the battle, Rebel spies managed to steal secret plans to the Empire’s ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet.</p>
           <p>Pursued by the Empire’s sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy…</p>
-
         </div>
-
       </section>
     </div>
     <!-- End Intro -->
   </div>
+  <!-- End Stars Background  -->
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/libs/jquery-3.3.1.min.js"></script>
