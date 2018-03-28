@@ -105,13 +105,15 @@ li {
   font-size: 2rem; }
 
 .cards {
+  color: #fff;
+  letter-spacing: 1px; }
+
+.cards {
   width: calc((100% - 3* 6rem) / 4);
   text-align: center;
-  color: white;
   padding: 1rem;
   background-color: #365190;
   border-radius: 2%;
-  letter-spacing: 1px;
   box-shadow: rgba(41, 168, 88, 0.4) -5px 5px 15px 1px;
   animation: cardIntro 1s forwards;
   float: left;
@@ -322,7 +324,7 @@ button#resetBtn {
 .deck__col-1-of-3 {
   position: relative;
   width: calc((100% - 2* 6rem) / 3);
-  color: white;
+  color: #fff;
   float: left; }
   .deck__col-1-of-3:not(:last-child) {
     margin-right: 6rem; }

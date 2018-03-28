@@ -25,7 +25,7 @@
 .deck__col-1-of-3 {
   position: relative;
   width: calc((100% - 2* #{$gutter-horizontal}) / 3);
-  color: white;
+  color: $color-white;
   float: left;
 
   &:not(:last-child) {
