@@ -32,8 +32,10 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(port, () => {
-  console.log(`Listening on port ${port}`);
-});
+if (!module.parent) {
+  server.listen(port, () => {
+    console.log(`Listening on port ${port}`);
+  });
+}
 
-module.exports = {app}
+module.exports = {app, server};
