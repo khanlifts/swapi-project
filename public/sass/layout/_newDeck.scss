@@ -6,6 +6,7 @@
   width: 100%;
   padding: inherit;
   text-align: center;
+  clip-path: polygon(0 10%, 10% 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
 }
 
 .deck__row {

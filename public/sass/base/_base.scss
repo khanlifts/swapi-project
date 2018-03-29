@@ -21,14 +21,7 @@ body {
   bottom: 0px;
   right: 0px;
   &__memo {
-    letter-spacing: .5rem;
-    color: $color-memo;
-    font-weight: 700;
-    font-size: 6rem;
-    text-align: center;
-    font-family: 'Pathway Gothic One', sans-serif;
-    text-transform: uppercase;
+    margin: 3rem 0 3rem 0;
     position: relative;
-    bottom: 6rem;
   }
 }

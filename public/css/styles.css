@@ -41,15 +41,8 @@ body {
   bottom: 0px;
   right: 0px; }
   .stars__memo {
-    letter-spacing: .5rem;
-    color: #4bd5ee;
-    font-weight: 700;
-    font-size: 6rem;
-    text-align: center;
-    font-family: 'Pathway Gothic One', sans-serif;
-    text-transform: uppercase;
-    position: relative;
-    bottom: 6rem; }
+    margin: 3rem 0 3rem 0;
+    position: relative; }
 
 body {
   font-weight: 400;
@@ -107,6 +100,15 @@ li {
 .cards {
   color: #fff;
   letter-spacing: 1px; }
+
+.stars__memo {
+  letter-spacing: .5rem;
+  color: #4bd5ee;
+  font-weight: 700;
+  font-size: 6rem;
+  text-align: center;
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-transform: uppercase; }
 
 .cards {
   width: calc((100% - 3* 6rem) / 4);
@@ -306,7 +308,8 @@ button#resetBtn {
   background-image: linear-gradient(to top, #6891ae, #0c1f3f);
   width: 100%;
   padding: inherit;
-  text-align: center; }
+  text-align: center;
+  clip-path: polygon(0 10%, 10% 0, 90% 0, 100% 10%, 100% 100%, 0 100%); }
 
 .deck__row {
   position: relative;
@@ -407,5 +410,4 @@ canvas {
   height: 40rem;
   padding: 3rem;
   background-color: #010F26;
-  background-image: linear-gradient(to top, rgba(54, 81, 144, 0.2), rgba(0, 0, 0, 0.2));
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%); }
+  background-image: linear-gradient(to top, rgba(54, 81, 144, 0.2), rgba(0, 0, 0, 0.2)); }
