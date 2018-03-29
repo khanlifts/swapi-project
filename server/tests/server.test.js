@@ -3,7 +3,7 @@ const request = require('supertest');
 const {app} = require('./../server');
 
 
-describe('GET http://swapi.co/api/${message.option}/${message.number}/', () => {
+describe('GET /', () => {
 
   it('should get the homepage', (done) => {
     request(app)
