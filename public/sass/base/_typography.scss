@@ -48,9 +48,6 @@ body {
   text-decoration: none;
 }
 
-.yodaBtn:hover {
-  font-size: 1.7rem;
-}
 
 li {
   font-size: 2rem;
@@ -77,4 +74,5 @@ li {
   text-align: center;
   font-family: 'Pathway Gothic One', sans-serif;
   text-transform: uppercase;
+  animation: memo 10s ease-out infinite;
 }

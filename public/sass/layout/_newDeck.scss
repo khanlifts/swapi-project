@@ -15,6 +15,7 @@
   max-width: $grid-width;
   margin: 0 auto;
   padding: 2rem 0 4rem 4rem;
+  height: 40rem;
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;

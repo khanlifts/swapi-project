@@ -32,3 +32,15 @@
     transform: translateY(0);
   }
 }
+
+@keyframes memo {
+  0% {
+    letter-spacing: .5rem;
+  }
+  50% {
+    letter-spacing: 1rem;
+  }
+  100% {
+    letter-spacing: .5rem;
+  }
+}
