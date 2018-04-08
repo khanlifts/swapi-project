@@ -11,6 +11,14 @@ window.onload = function() {
   });
 };
 
+// on Intro reception
+socket.on('createIntro', function(body){
+  const intro = JSON.parse(body);
+  jQuery('#api_name').text(intro.credentials[0].name);
+  jQuery('#api_email').text(intro.credentials[0].email);
+  jQuery('#api_text').text(intro.credentials[0].text);
+});
+
 // counters & buttonId
 var maxAppend = 0;
 var submitButton = jQuery('#yodaBtn');

@@ -116,6 +116,12 @@ li {
   text-transform: uppercase;
   animation: memo 10s ease-out infinite; }
 
+.creds {
+  text-align: center; }
+
+#api_name, #api_email {
+  color: #4bd5ee; }
+
 .cards {
   width: calc((100% - 3* 6rem) / 4);
   text-align: center;

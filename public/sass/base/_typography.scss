@@ -76,3 +76,11 @@ li {
   text-transform: uppercase;
   animation: memo 10s ease-out infinite;
 }
+
+.creds {
+  text-align: center;
+}
+
+#api_name, #api_email {
+  color: $color-memo;
+}
