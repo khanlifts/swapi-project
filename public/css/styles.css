@@ -417,7 +417,24 @@ canvas {
   .deck__col-1-of-3:last-child {
     display: none; }
   .deck__col-1-of-3 {
-    margin-left: 3.7rem; } }
+    margin-left: 3.7rem; }
+  .heading-primary--main {
+    padding-top: 3rem;
+    font-size: 6rem; }
+  .heading-primary--sub {
+    font-size: 4rem; }
+  .yodaInput {
+    font-size: 4rem; }
+  .yodaBtn {
+    font-size: 3rem; }
+  button#resetBtn {
+    font-size: 3rem;
+    padding: 10px 20px;
+    border-radius: 10px; }
+  section.star-wars {
+    height: 0;
+    perspective: 100rem;
+    line-height: 180%; } }
 
 .output {
   height: 40rem;
